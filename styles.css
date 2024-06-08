@@ -1,5 +1,62 @@
+/* Universal Styles*/
+
 html {
     font-size: 18px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+
+/*Header*/
+
+.site-title {
+    text-align: center;
+    background-color: hsla(207, 71%, 16%, 1);
+    margin: 0;
+    padding: .35rem 0;
+}
+
+.site-title h1 {
+    color: #FFF;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:visited {
+    color: inherit;
+}
+
+.nav-link:focus {
+    color: hsla(207, 71%, 16%, 1);
+}
+
+.nav-link:hover {
+    color: #145DA0;
+}
+
+.nav-link:active {
+    color: hsla(207, 71%, 16%, 1);
 }
 
 /*Explore Protagonists Section */
