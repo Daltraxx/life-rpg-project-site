@@ -163,7 +163,6 @@ nav ul li {
 .profile {
     text-align: center;
 }
-.profile a {}
 
 .profile img {
     height: 10rem;
@@ -175,3 +174,55 @@ nav ul li {
 #creator-journal h2 {
     margin-top: 0;
 }
+
+.journal-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.journal-entry {
+    text-align: center;
+    max-width: 25%;
+    min-width: 15rem; 
+}
+
+.journal-entry:not(:last-child)  {
+    margin-right: 2.5rem;
+}
+
+.journal-entry a {
+    text-decoration: none;
+}
+
+.journal-entry a:focus {
+    color: hsla(207, 71%, 16%, 1);
+}
+
+.journal-entry a:hover {
+    color: #145DA0;
+}
+
+.journal-entry a:active {
+    color: hsla(207, 71%, 16%, 1);
+}
+
+.journal-entry h3 {
+    text-decoration: underline;
+}
+
+.journal-entry h3, .journal-entry p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.journal-entry img {
+    height: 10rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    .journal-entry h3, .journal-entry p {
+        text-align: center;
+    }
+}
+
