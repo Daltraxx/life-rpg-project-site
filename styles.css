@@ -175,6 +175,11 @@ nav ul li {
     width: 55%;
 }
 
+.protagonists-intro a {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .profiles-container {
     display: flex;
     justify-content: space-between;
@@ -227,6 +232,10 @@ nav ul li {
 }
 
 @media only screen and (max-width: 1400px) {
+    .journal-entry {
+        min-width: 20rem;
+    }
+
     .journal-entry h3, .journal-entry p {
         text-align: center;
     }
@@ -242,7 +251,7 @@ nav ul li {
 
 .recommended-book {
     text-align: center;
-    min-width: 20%;
+    min-width: 22rem;
     max-width: 25%;
     margin: 0 2rem;
 }
@@ -250,15 +259,22 @@ nav ul li {
 
 .book-title {
     color: hsla(207, 71%, 16%, 1);
+    text-decoration: underline;
+}
+
+.book-title:hover, .book-description:hover {
+    color: #145DA0;
 }
 
 .book-author {
     color: rgb(1, 83, 131);
     font-size: .9rem;
+    font-style: italic;
 }
 
 .book-description {
     width: 20rem;
+    color: black;
 }
 
 /*Footer*/
