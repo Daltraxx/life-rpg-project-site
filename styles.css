@@ -24,11 +24,33 @@ section h2 {
     padding: .35rem;
 }
 
+.big-link {
+    text-decoration: none;
+    color: black;
+}
+
+.big-link:focus {
+    color: hsla(207, 71%, 16%, 1);
+}
+
+.big-link:hover {
+    color: #145DA0;
+}
+
+.big-link:active {
+    color: hsla(207, 71%, 16%, 1);
+}
+
 /*Header*/
 
 .site-title {
     text-align: center;
     background-color: hsla(207, 71%, 16%, 1);
+}
+
+.site-title a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .site-title h1 {
@@ -191,22 +213,6 @@ nav ul li {
     margin-right: 2.5rem;
 }
 
-.journal-entry a {
-    text-decoration: none;
-}
-
-.journal-entry a:focus {
-    color: hsla(207, 71%, 16%, 1);
-}
-
-.journal-entry a:hover {
-    color: #145DA0;
-}
-
-.journal-entry a:active {
-    color: hsla(207, 71%, 16%, 1);
-}
-
 .journal-entry h3 {
     text-decoration: underline;
 }
@@ -224,5 +230,34 @@ nav ul li {
     .journal-entry h3, .journal-entry p {
         text-align: center;
     }
+}
+
+/*Recommended Reading Section*/
+
+.recommended-books-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recommended-book {
+    text-align: center;
+    min-width: 20%;
+    max-width: 25%;
+    margin: 0 2rem;
+}
+
+
+.book-title {
+    color: hsla(207, 71%, 16%, 1);
+}
+
+.book-author {
+    color: rgb(1, 83, 131);
+    font-size: .9rem;
+}
+
+.book-description {
+    width: 20rem;
 }
 
